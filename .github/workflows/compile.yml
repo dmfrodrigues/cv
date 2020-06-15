@@ -1,0 +1,22 @@
+name: compile
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install latex
+      run: sudo apt install -y texlive-latex-extra texlive-lang-portuguese latexmk curl
+
+    - name: Compile PT cv
+      run: make CV_DR_pt.pdf
+    - name: Upload PT cv
+      uses: actions/upload-artifact@v2
+      with:
+        name: CV_DR_pt.pdf
+        path: CV_DR_pt.pdf

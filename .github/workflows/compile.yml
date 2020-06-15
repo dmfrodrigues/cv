@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install latex
-      run: sudo apt install -y texlive-latex-extra texlive-fonts-recommended texlive-lang-portuguese latexmk curl
+      run: sudo apt install -y texlive-latex-extra texlive-fonts-extra texlive-lang-portuguese latexmk curl
 
     - name: Compile PT cv
       run: make CV_DR_pt.pdf

@@ -20,3 +20,11 @@ jobs:
       with:
         name: CV_DR_pt.pdf
         path: CV_DR_pt.pdf
+
+    - name: Compile mini PT cv
+      run: make CV_DR_mini_pt.pdf
+    - name: Upload mini PT cv
+      uses: actions/upload-artifact@v2
+      with:
+        name: CV_DR_mini_pt.pdf
+        path: CV_DR_mini_pt.pdf

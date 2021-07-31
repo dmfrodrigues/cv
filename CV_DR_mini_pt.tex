@@ -1,9 +1,5 @@
-\documentclass[8pt]{extarticle}
-% Font
-\usepackage[default]{opensans}
-\linespread{1.25}
-% Margins
-\usepackage[top=30mm,bottom=18mm,left=18mm,right=18mm]{geometry}
+\documentclass{cv}
+
 % Graphics and images
 \usepackage{graphicx}
 % Encodings (to render letters with diacritics and special characters)
@@ -11,60 +7,19 @@
 \usepackage[T1]{fontenc}
 % Language
 \usepackage[portuguese]{babel}
-% Hyperreferences
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=blue,
-}
-\urlstyle{same}
-% Headers and footers
-\usepackage{fancyhdr}
-\pagestyle{fancyplain}
-\fancyhf{}
-\lhead{Diogo Miguel Ferreira Rodrigues}
-\rhead{\thepage}
-% Subsections
-\usepackage{titlesec}
-\titleformat{\subsection}{\large}{\thesubsection}{}{\scshape}
-\titlespacing*{\subsection}{0pt}{0pt}{0.6\baselineskip}
-% Commands
-%\usepackage{showframe}
-%% Parag
-\newcommand{\parag}[1]{
-\begin{minipage}{\textwidth} \hfill
-\begin{minipage}{\dimexpr\textwidth-0.6cm}
-	#1
-\end{minipage}
-\end{minipage}
-}
-%% Itemtime
-\newcommand{\itemtime}[2]{
-#1 \hfill \begin{minipage}[t]{0.185\textwidth}         #2  \end{minipage}
-}
-%% Job
-\newcommand{\job}[3]{\parag{
-\itemtime{\textbf{#1}}{\textbf{#2}}\\
-#3 \vspace*{9px}}}
-%% Pub
-\newcommand{\pub}[3]{\parag{
-\itemtime{\textit{#1}}{#2}\\
-#3 \vspace*{9px}}}
-%% Idiom
-\newcommand{\idiom}[2]{\textbf{#1} – #2\vspace*{6px}\\}
+
 % Document
 \begin{document}
 \thispagestyle{empty}
 \noindent
 \begin{minipage}[l]{0.75\textwidth}
 	\section*{Diogo Miguel Ferreira Rodrigues}
-	Rua de Avioso, 553 | Castêlo da Maia (4475-617 MAIA)\\
+	%Rua de Avioso, 553 | Castêlo da Maia (4475-617 MAIA)\\
+    Maia, Portugal\\
     \begin{tabular}{@{}c @{\hskip 0.5em} l @{\hskip 5em} c @{\hskip 0.5em} l @{}}
-        \includegraphics[height=7px]{email.png}    & \href{mailto:diogo.rodrigues@fe.up.pt}{diogo.rodrigues@fe.up.pt}     & \includegraphics[height=7px]{linkedin.png} & \href{https://www.linkedin.com/in/dmfrodrigues/}{dmfrodrigues} \\
-                                                   & \href{mailto:dmfrodrigues2000@gmail.com}{dmfrodrigues2000@gmail.com} & \includegraphics[height=7px]{github.png}   & \href{https://github.com/dmfrodrigues}{dmfrodrigues}\\
-        \includegraphics[height=7px]{phone.png}    & +351 915507239 \\
+        \includegraphics[height=7px]{img/email.png}    & \href{mailto:diogo.rodrigues@fe.up.pt}{diogo.rodrigues@fe.up.pt}     & \includegraphics[height=7px]{img/linkedin.png} & \href{https://www.linkedin.com/in/dmfrodrigues/}{dmfrodrigues} \\
+                                                       & \href{mailto:dmfrodrigues2000@gmail.com}{dmfrodrigues2000@gmail.com} & \includegraphics[height=7px]{img/github.png}   & \href{https://github.com/dmfrodrigues}{dmfrodrigues}\\
+        %\includegraphics[height=7px]{phone.png}    & +351 915507239 \\
     \end{tabular}
 \end{minipage}%
 \write18{ curl -L https://i.imgur.com/EdhdoGQ.jpg --output cv_photo.jpg ; }

@@ -13,13 +13,13 @@ jobs:
     - name: Install latex
       run: sudo apt install -y texlive-latex-extra texlive-fonts-extra texlive-lang-portuguese latexmk curl
 
-    - name: Compile PT cv
-      run: make CV_DR_pt.pdf
-    - name: Upload PT cv
+    - name: Compile EN cv
+      run: make CV_DR_en.pdf
+    - name: Upload EN cv
       uses: actions/upload-artifact@v2
       with:
-        name: CV_DR_pt.pdf
-        path: CV_DR_pt.pdf
+        name: CV_DR_en.pdf
+        path: CV_DR_en.pdf
 
     - name: Compile mini PT cv
       run: make CV_DR_mini_pt.pdf

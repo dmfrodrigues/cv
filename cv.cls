@@ -54,6 +54,11 @@
 \itemtime{\textbf{#1}}{\textbf{#2}}\\
 #3 \vspace*{9px}}}
 
+%% Skills
+\newcommand{\skills}[2]{\parag{
+\itemtime{\textbf{#1}}{}\\
+#2 \vspace*{9px}}}
+
 %% Pub
 \newcommand{\pub}[3]{\parag{
 \itemtime{\textit{#1}}{#2}\\

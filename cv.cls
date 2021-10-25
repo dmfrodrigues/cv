@@ -34,6 +34,14 @@
 
 % Commands
 %\usepackage{showframe}
+\RequirePackage{ifthen}
+
+%% Optional
+\newcommand{\optional}[1]{
+\ifdefined\SHOWOPTIONAL
+#1
+\fi
+}
 
 %% Parag
 \newcommand{\parag}[1]{
@@ -50,9 +58,26 @@
 }
 
 %% Job
-\newcommand{\job}[3]{\parag{
-\itemtime{\textbf{#1}}{\textbf{#2}}\\
-#3 \vspace*{9px}}}
+\newcommand{\job}[4][]{
+\ifthenelse{\equal{#1}{opt}}{
+\optional{
+\parag{\itemtime{\textbf{#2}}{\textbf{#3}}\\
+#4 \vspace*{9px}}
+}
+}{
+\parag{\itemtime{\textbf{#2}}{\textbf{#3}}\\
+#4 \vspace*{9px}}
+}
+}
+% \newcommand{\job}[4]{
+% % \ifdefined\OPTIONAL
+% % \else
+
+% \parag{
+% \itemtime{\textbf{#2}}{\textbf{#3}}\\
+% #4 \vspace*{9px}}
+% % \fi
+% }
 
 %% Skills
 \newcommand{\skills}[2]{\parag{

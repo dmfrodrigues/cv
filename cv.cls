@@ -45,7 +45,7 @@
 
 %% Parag
 \newcommand{\parag}[1]{
-\begin{minipage}{\textwidth} \hfill
+\begin{minipage}{\linewidth} \hfill
 \begin{minipage}{\dimexpr\textwidth-0.6cm}
 	#1
 \end{minipage}

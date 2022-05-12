@@ -30,7 +30,7 @@
 % Subsections
 \usepackage{titlesec}
 \titleformat{\subsection}{\large}{\thesubsection}{}{\scshape}
-\titlespacing*{\subsection}{0pt}{0pt}{0.6\baselineskip}
+\titlespacing*{\subsection}{0pt}{-1pt}{0.5\baselineskip}
 
 % Commands
 %\usepackage{showframe}
@@ -47,7 +47,7 @@
 \newcommand{\parag}[1]{
 \begin{minipage}{\linewidth} \hfill
 \begin{minipage}{\dimexpr\textwidth-0.6cm}
-	#1
+	#1 \vspace{-2pt}
 \end{minipage}
 \end{minipage}
 }

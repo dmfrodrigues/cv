@@ -1,21 +1,21 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cv}[2021/07/31 Template for a CV]
 
-\LoadClass[a4paper, 8pt]{extarticle}
+\LoadClass[a4paper, 9pt]{extarticle}
 
 % Font
 \RequirePackage[default]{opensans}
-\linespread{1.25}
+\linespread{1.3}
 
 % Margins
-\RequirePackage[top=30mm,bottom=18mm,left=18mm,right=18mm]{geometry}
+\RequirePackage[top=30mm,bottom=0.7in,left=0.7in,right=0.7in]{geometry}
 
 % Hyperreferences
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=blue,
 }
 \urlstyle{same}
@@ -27,10 +27,14 @@
 \lhead{Diogo Miguel Ferreira Rodrigues}
 \rhead{\thepage}
 
+% Hide environments
+\RequirePackage{comment}
+
 % Subsections
 \usepackage{titlesec}
-\titleformat{\subsection}{\large}{\thesubsection}{}{\scshape}
-\titlespacing*{\subsection}{0pt}{-1pt}{0.5\baselineskip}
+\titleformat{\section}{\bfseries\huge}{\thesection}{}{\scshape}
+\titleformat{\subsection}{\Large}{\thesubsection}{}{\scshape}
+\titlespacing*{\subsection}{0pt}{10pt}{0.5\baselineskip}
 
 % Commands
 %\usepackage{showframe}
@@ -38,56 +42,48 @@
 
 %% Optional
 \newcommand{\optional}[1]{
-\ifdefined\SHOWOPTIONAL
-#1
-\fi
-}
-
-%% Parag
-\newcommand{\parag}[1]{
-\begin{minipage}{\linewidth} \hfill
-\begin{minipage}{\dimexpr\textwidth-0.6cm}
-	#1 \vspace{-2pt}
-\end{minipage}
-\end{minipage}
+    \ifdefined\SHOWOPTIONAL
+        #1
+    \fi
 }
 
 %% Itemtime
 \newcommand{\itemtime}[2]{
-#1 \hfill \begin{minipage}[t]{0.190\textwidth}         #2  \end{minipage}
+    \begin{minipage}[t]{0.84\textwidth}#1\end{minipage}#2%
 }
 
 %% Job
-\newcommand{\job}[4][]{
-\ifthenelse{\equal{#1}{opt}}{
-\optional{
-\parag{\itemtime{\textbf{#2}}{\textbf{#3}}\\
-#4 \vspace*{9px}}
+\newenvironment{job}[3][]{
+    \begin{minipage}{\linewidth}
+        \itemtime{\textbf{#2}}{\textbf{#3}}\\
+        }{
+        \vspace{3.5mm}
+    \end{minipage}%
 }
-}{
-\parag{\itemtime{\textbf{#2}}{\textbf{#3}}\\
-#4 \vspace*{9px}}
-}
-}
-% \newcommand{\job}[4]{
-% % \ifdefined\OPTIONAL
-% % \else
 
-% \parag{
-% \itemtime{\textbf{#2}}{\textbf{#3}}\\
-% #4 \vspace*{9px}}
-% % \fi
-% }
+\ifdefined\SHOWOPTIONAL
+    \newenvironment{jobopt}[3][]{\begin{job}[#1]{#2}{#3}}{\end{job}}
+\else
+    \excludecomment{jobopt}
+\fi
 
 %% Skills
-\newcommand{\skills}[2]{\parag{
-\itemtime{\textbf{#1}}{}\\
-#2 \vspace*{9px}}}
+\newenvironment{skills}[3][]{
+    \begin{minipage}{\linewidth}
+        \textbf{#2}\\
+        }{
+        \vspace{3.5mm}
+    \end{minipage}%
+}
 
 %% Pub
-\newcommand{\pub}[3]{\parag{
-\itemtime{\textit{#1}}{#2}\\
-#3 \vspace*{9px}}}
+\newcommand{\pub}[3]{
+    \begin{minipage}{\linewidth}
+        \itemtime{\textit{#1}}{#2}\\
+        #3
+        \vspace*{3.5mm}
+    \end{minipage}%
+}
 
-%% Idiom
-\newcommand{\idiom}[2]{\textbf{#1} – #2\vspace*{6px}\\}
+%% Indent
+\setlength{\parindent}{0pt}

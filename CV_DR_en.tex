@@ -12,6 +12,8 @@
 % Multicols
 \usepackage{multicol}
 
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+
 \newif\ifen
 \newif\ifpt
 
@@ -26,395 +28,415 @@
 \thispagestyle{empty}
 \vspace*{-3\baselineskip}
 \noindent
-\begin{minipage}[l]{0.75\textwidth}
-	\section*{Diogo Miguel Ferreira Rodrigues}
-	%Rua de Avioso, 553 | Castêlo da Maia (4475-617 MAIA)\\
-    Maia, Portugal\\
-    \begin{tabular}{@{}c @{\hskip 0.5em} l @{\hskip 4.1em} c @{\hskip 0.5em} l @{\hskip 4.1em} c @{\hskip 0.5em} l @{}}
-        \includegraphics[height=7px]{img/email.png}    & \href{mailto:diogo.rodrigues@edu.fe.up.pt}{diogo.rodrigues@edu.fe.up.pt} & \includegraphics[height=7px]{img/linkedin.png} & \href{https://www.linkedin.com/in/dmfrodrigues/}{dmfrodrigues} & \includegraphics[height=7px]{img/globe.png} & \href{https://dmfrodrigues.github.io/about/}{dmfrodrigues.github.io/about} \\
-                                                       & \href{mailto:dmfrodrigues2000@gmail.com}{dmfrodrigues2000@gmail.com}     & \includegraphics[height=7px]{img/github.png}   & \href{https://github.com/dmfrodrigues}{dmfrodrigues}           &                                             & \\
+\begin{minipage}[l]{0.85\textwidth}
+    \section*{Diogo Miguel Ferreira Rodrigues}
+    %Rua de Avioso, 553 | Castêlo da Maia (4475-617 MAIA)\\
+    Porto, Portugal\\
+    \begin{tabular}{@{}c @{\hskip 0.5em} l @{\hskip 8mm} c @{\hskip 0.5em} l @{\hskip 8mm} c @{\hskip 0.5em} l @{}}
+        \includegraphics[height=7px]{img/email.png} & \href{mailto:diogo.rodrigues@fe.up.pt}{diogo.rodrigues@fe.up.pt}     & \includegraphics[height=7px]{img/linkedin.png} & \href{https://www.linkedin.com/in/dmfrodrigues/}{dmfrodrigues} & \includegraphics[height=7px]{img/globe.png} & \href{https://dmfrodrigues.github.io/about/}{dmfrodrigues.github.io/about} \\
+                                                    & \href{mailto:dmfrodrigues2000@gmail.com}{dmfrodrigues2000@gmail.com} & \includegraphics[height=7px]{img/github.png}   & \href{https://github.com/dmfrodrigues}{dmfrodrigues}           &                                             &                                                                            \\
         %\includegraphics[height=7px]{img/phone.png}    & +351 915507239 \\
     \end{tabular}
-    % \optional{
-    \vspace{1em}
+    \optional{
+        \vspace{1em}
 
-    Seeking a \textbf{job opportunity} after I finish my Master's degree in June 2023.
+        Seeking a \textbf{job opportunity} after I finish my Master's degree in June 2023.
 
-    \vspace{1.3em}
-    % }
+        \vspace{1.3em}
+    }
 \end{minipage}%
-\begin{minipage}[l]{0.24\textwidth}
-	\begin{center} \includegraphics[height=30mm]{img/cv_photo.jpg} \end{center}
+\begin{minipage}[l]{0.15\textwidth}
+    \begin{center} \includegraphics[width=\textwidth]{img/cv_photo.jpg} \end{center}
 \end{minipage}
+
 \subsection*{\en{Education}\pt{Educação}}
-\job{\en{Master in Informatics}\pt{Mestrado em Informática}}{\en{Oct}\pt{Out}/2022 -- Mar/2023}{
-\en{Technical University of Munich}\pt{Universidade Técnica de Munique} (TUM) \en{under the Erasmus programme, Winter Semester}\pt{sob o programa Erasmus+, Semestre de Inverno}
-\\ \en{Modules}\pt{Unidades curriculares}: \en{Cloud Systems Engineering}\pt{Engenharia de Sistemas de \textit{Cloud}}, \en{Cloud-Based Data Processing}\pt{Processamento de Dados na \textit{Cloud}},\\ \en{Advanced Topics of Software Engineering}\pt{Tópicos Avançados em Engenharia de Software}, \en{Query Optimization}\pt{Otimização de \textit{queries}}
-}
-\job{\en{Master in Informatics and Computing Engineering}\pt{Mestrado em Engenharia Informática e Computação}}{2021 -- 2023}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto} (FEUP), \en{grade so far}\pt{classificação até agora} 18.60/20.00
-\\ \en{Elective modules}\pt{Unidades curriculares opcionais}: \en{Advanced Data Structures and Algorithms}\pt{Estruturas de Dados e Algoritmos Avançados}, \\ \en{Embedded and Real Time Systems}\pt{Sistemas Embutidos e de Tempo Real}, \en{Computer Systems Security}\pt{Segurança em Sistemas Informáticos}, \en{Optimization}\pt{Otimização}
-\\\en{Thesis}\pt{Tese}: \textit{Dynamic Traffic Assignment and Routing Algorithms with Applications in Smart Mobility}
-}
-\job{\en{Bachelor in Informatics and Computing Engineering}\pt{Licenciatura em Engenharia Informática e Computação}}{2018 -- 2021}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto} (FEUP), \en{final grade}\pt{classificação final} 18.92/20.00
-}
-\job{\en{Secondary School}\pt{Ensino Secundário} -- \en{Sciences and Technologies Programme}\pt{Curso de Ciências e Tecnologias} (\en{10th-12th grade}\pt{10º-12º anos})}{2015 -- 2018}{
-\en{Castêlo da Maia Secondary School}\pt{Escola Secundária do Castêlo da Maia} (ESCM), \en{final grade}\pt{classificação final} 19.6/20.0
-\optional{\\ \en{Matematics National Exam}\pt{Exame Nacional de Matemática} (\en{12th grade}\pt{12º ano}): 18.8/20.0}
-\optional{\\ \en{Physics and Chemistry National Exam}\pt{Exame Nacional de Física e Química A} (\en{11th grade}\pt{11º ano}): 19.5/20.0}
-\optional{\\ \en{Biology and Geology National Exam}\pt{Exame Nacional de Biologia e Geologia} (\en{11th grade}\pt{11º ano}): 17.5/20.0}
-\optional{\\ \en{Portuguese Language National Exam}\pt{Exame Nacional de Português} (\en{12th grade}\pt{12º ano}): 16.5/20.0}
-\optional{\\ \en{Optional subjects}\pt{Disciplinas opcionais} (\en{12th grade}\pt{12º ano}): \en{Physics}\pt{Física}, \en{Informatics}\pt{Aplicações Informáticas B}}
-\optional{\\ \en{Specific subjects}\pt{Disciplinas específicas} (\en{10th/11th grades}\pt{10º/11º anos}): \en{Physics and Chemistry}\pt{Física e Química A}, \en{Biology and Geology}\pt{Biologia e Geologia}}
-\optional{\\ \en{Excelence Board on school years}\pt{Quadro de Excelência nos anos letivos} 2015/16, 2016/17 \en{and}\pt{e} 2017/18}
-\optional{\\ \en{Merit Board on school year}\pt{Quadro de Mérito no ano letivo} 2017/18}
-\\ \en{Merit Prize from the Ministry of Education, for best grade of the school}\pt{Prémio de Mérito do Ministério da Educação, pela melhor classificação no estabelecimento escolar}
-}
-\job[opt]{\en{3rd cycle of Basic Education}\pt{3º ciclo do Ensino Básico} (\en{7th-9th grade}\pt{7º-9º anos})}{2012 -- 2015}{
-\en{Castêlo da Maia Basic School of 2nd and 3rd Cycles}\pt{Escola Básica do 2º e 3º ciclos do Castêlo da Maia} (EB2/3 Castêlo da Maia) -- \en{7th grade}\pt{7º ano}\\
-\en{Castêlo da Maia Secondary School}\pt{Escola Secundária do Castêlo da Maia} (ESCM) -- \en{8th/9th grades}\pt{8º/9º anos}\\
-\en{Final grade}\pt{Nota final}: 5.0/5.0\\
-\en{First foreign language}\pt{Primeira língua estrangeira}: \en{English}\pt{Inglês}\\
-\en{Second foreign language}\pt{Segunda língua estrangeira}: \en{French}\pt{Francês}\\
-\en{Excelence Board on school years}\pt{Quadro de Excelência nos anos letivos} 2012/13, 2013/14 \en{and}\pt{e} 2014/15
-}
-\job[opt]{\en{2nd cycle of Basic Education}\pt{2º ciclo do Ensino Básico} (\en{5th-6th grade}\pt{5º-6º anos})}{2010 -- 2012}{
-\en{Castêlo da Maia Basic School of 2nd and 3rd Cycles}\pt{Escola Básica do 2º e 3º ciclos do Castêlo da Maia} (EB2/3 Castêlo da Maia)\\
-\en{Final grade}\pt{Nota final}: 5.0/5.0\\
-\en{Excelence Board on school years}\pt{Quadro de Excelência nos anos letivos} 2010/11 \en{and}\pt{e} 2011/12
-}
-\job[opt]{\en{1st cycle of Basic Education}\pt{1º ciclo do Ensino Básico} (\en{1st-4th grade}\pt{1º-4º anos})}{2006 -- 2010}{
-\en{Castêlo da Maia Basic School of 1st cycle and Kindergarten}\pt{Escola Básica do 1º ciclo e Jardim de Infância do Castêlo da Maia} (EB1/JI Castêlo da Maia)
-}
+\begin{job}{\en{Master in Informatics and Computing Engineering}\pt{Mestrado em Engenharia Informática e Computação}}{2021 -- 2023}
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}, \en{grade}\pt{classificação} 18.7/20.0
+    \\\en{Thesis}\pt{Tese}: \textit{Dynamic Traffic Assignment and Routing Algorithms with Applications in Smart Mobility}, \en{grade}\pt{classificação} 19/20
+    \\ \en{Elective modules}\pt{Unidades curriculares opcionais}: \en{Advanced Data Structures and Algorithms}\pt{Estruturas de Dados e Algoritmos Avançados}, \\ \en{Embedded and Real Time Systems}\pt{Sistemas Embutidos e de Tempo Real}, \en{Computer Systems Security}\pt{Segurança em Sistemas Informáticos}, \en{Optimization}\pt{Otimização}
+\end{job}
+\begin{job}{\en{Master in Informatics (Erasmus)}\pt{Mestrado em Informática (Erasmus)}}{2022/10 -- 2023/03}
+    \en{Technical University of Munich}\pt{Universidade Técnica de Munique} (TUM), \en{grade}\pt{classificação} 19.0/20.0
+    \\ \en{Modules}\pt{Unidades curriculares}: \en{Cloud Systems Engineering}\pt{Engenharia de Sistemas de \textit{Cloud}}, \en{Cloud-Based Data Processing}\pt{Processamento de Dados na \textit{Cloud}},\\ \en{Advanced Topics of Software Engineering}\pt{Tópicos Avançados em Engenharia de Software}, \en{Query Optimization}\pt{Otimização de \textit{queries}}
+\end{job}
+\begin{job}{\en{Bachelor in Informatics and Computing Engineering}\pt{Licenciatura em Engenharia Informática e Computação}}{2018 -- 2021}
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}, \en{grade}\pt{classificação} 18.9/20.0
+    \begin{itemize}[noitemsep,topsep=1pt,leftmargin=10pt]
+        \item\textit{\en{Incentive Prize}\pt{Prémio Incentivo}} \en{of the University of Porto}\pt{da Universidade do Porto}, \en{for best grade of FEUP in freshman year}\pt{pela melhor classificação da FEUP no 1º ano}
+    \end{itemize}
+\end{job}
+\begin{jobopt}{\en{Secondary School}\pt{Ensino Secundário} -- \en{Sciences and Technologies Programme}\pt{Curso de Ciências e Tecnologias} (\en{Grade 10-12}\pt{10º-12º anos})}{2015 -- 2018}
+    \en{Castêlo da Maia Secondary School}\pt{Escola Secundária do Castêlo da Maia} (ESCM), \en{grade}\pt{classificação} 19.6/20.0
+    \optional{\\ \en{Matematics National Exam}\pt{Exame Nacional de Matemática} (\en{12th grade}\pt{12º ano}): 18.8/20.0}
+    \optional{\\ \en{Physics and Chemistry National Exam}\pt{Exame Nacional de Física e Química A} (\en{11th grade}\pt{11º ano}): 19.5/20.0}
+    \optional{\\ \en{Biology and Geology National Exam}\pt{Exame Nacional de Biologia e Geologia} (\en{11th grade}\pt{11º ano}): 17.5/20.0}
+    \optional{\\ \en{Portuguese Language National Exam}\pt{Exame Nacional de Português} (\en{12th grade}\pt{12º ano}): 16.5/20.0}
+    \optional{\\ \en{Optional subjects}\pt{Disciplinas opcionais} (\en{12th grade}\pt{12º ano}): \en{Physics}\pt{Física}, \en{Informatics}\pt{Aplicações Informáticas B}}
+    \optional{\\ \en{Specific subjects}\pt{Disciplinas específicas} (\en{10th/11th grades}\pt{10º/11º anos}): \en{Physics and Chemistry}\pt{Física e Química A}, \en{Biology and Geology}\pt{Biologia e Geologia}}
+    \optional{\\ \en{Excelence Board on school years}\pt{Quadro de Excelência nos anos letivos} 2015/16, 2016/17 \en{and}\pt{e} 2017/18}
+    \optional{\\ \en{Merit Board on school year}\pt{Quadro de Mérito no ano letivo} 2017/18}
+    \begin{itemize}[noitemsep,topsep=1pt,leftmargin=10pt]
+        \item\en{Merit Prize from the Ministry of Education, for best grade of the school}\pt{Prémio de Mérito do Ministério da Educação, pela melhor classificação no estabelecimento escolar}
+    \end{itemize}
+\end{jobopt}
+\begin{jobopt}{\en{3rd cycle of Basic Education}\pt{3º ciclo do Ensino Básico} (\en{7th-9th grade}\pt{7º-9º anos})}{2012 -- 2015}
+    \en{Castêlo da Maia Basic School of 2nd and 3rd Cycles}\pt{Escola Básica do 2º e 3º ciclos do Castêlo da Maia} (EB2/3 Castêlo da Maia) -- \en{7th grade}\pt{7º ano}\\
+    \en{Castêlo da Maia Secondary School}\pt{Escola Secundária do Castêlo da Maia} (ESCM) -- \en{8th/9th grades}\pt{8º/9º anos}\\
+    \en{Final grade}\pt{Nota final}: 5.0/5.0\\
+    \en{First foreign language}\pt{Primeira língua estrangeira}: \en{English}\pt{Inglês}\\
+    \en{Second foreign language}\pt{Segunda língua estrangeira}: \en{French}\pt{Francês}\\
+    \en{Excelence Board on school years}\pt{Quadro de Excelência nos anos letivos} 2012/13, 2013/14 \en{and}\pt{e} 2014/15
+\end{jobopt}
+\begin{jobopt}{\en{2nd cycle of Basic Education}\pt{2º ciclo do Ensino Básico} (\en{5th-6th grade}\pt{5º-6º anos})}{2010 -- 2012}
+    \en{Castêlo da Maia Basic School of 2nd and 3rd Cycles}\pt{Escola Básica do 2º e 3º ciclos do Castêlo da Maia} (EB2/3 Castêlo da Maia)\\
+    \en{Final grade}\pt{Nota final}: 5.0/5.0\\
+    \en{Excelence Board on school years}\pt{Quadro de Excelência nos anos letivos} 2010/11 \en{and}\pt{e} 2011/12
+\end{jobopt}
+\begin{jobopt}{\en{1st cycle of Basic Education}\pt{1º ciclo do Ensino Básico} (\en{1st-4th grade}\pt{1º-4º anos})}{2006 -- 2010}
+    \en{Castêlo da Maia Basic School of 1st cycle and Kindergarten}\pt{Escola Básica do 1º ciclo e Jardim de Infância do Castêlo da Maia} (EB1/JI Castêlo da Maia)
+\end{jobopt}
+
 \subsection*{\en{Jobs \& positions}\pt{Experiência profissional}}
-\job{\en{Software Engineer, Intern}\pt{Engenheiro de Software -- Estagiário}}{Jul/2022 -- \en{Oct}\pt{Out}/2022}{
-SingleStore
-\\ \en{Managed Services team}\pt{Equipa de Managed Services}
-}
-\job{\en{Graduate Teaching Assistant}\pt{Monitor}}{Feb/2022 -- Jul/2022}{
-FEUP -- DA (\en{Algorithm Design}\pt{Desenho de Algoritmos})
-\\ \en{Weekly follow-up of students and developing software for the curricular unit's projects}\pt{Acompanhamento semanal dos estudantes e desenvolvimento/manutenção de\\ dados e software para os projetos da unidade curricular}
-}
-\job{\en{Graduate Teaching Assistant}\pt{Monitor}}{Sep/2021 -- Feb/2022}{
-FEUP -- LBAW (\en{Database and Web Applications Laboratory}\pt{Laboratório de Bases de Dados e Aplicações Web})
-\\ \en{Weekly monitor sessions with practical examples and student projects follow-up}\pt{Responsável por sessões de monitoria semanais com exemplos práticos e\\ acompanhamento dos projetos dos alunos}
-}
-\job{\en{Graduate Teaching Assistant}\pt{Monitor}}{Feb/2021 -- Jul/2021}{
-FEUP -- CAL (\en{Algorithm Design and Analysis}\pt{Conceção e Análise de Algoritmos})
-\\ \en{Weekly follow-up of students and developing software for the curricular unit's projects}\pt{Acompanhamento semanal dos estudantes e desenvolvimento/manutenção de\\ dados e software para os projetos da unidade curricular}
-}
-\job{\en{Research Assistant}\pt{Investigador Assistente}}{Sep/2019 -- Sep/2020}{
-INESC TEC -- \en{Laboratory of Artificial Intelligence and Decision Support}\pt{Laboratório de Inteligência Artifical e Apoio à Decisão} (LIAAD)\\
-\textit{Research on European Children and Adults Born Preterm} (RECAP)
-}
-\job[opt]{\en{Member of the Scientific Committee of the}\pt{Membro do Comité Científico das} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática} -- ONI}}{2018 -- 2020}{
-\en{Invited as former participant of the}\pt{Convidado como ex-participante nas} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática}} \en{and the}\pt{e na} \\
-\mbox{\textit{International Olympiad in Informatics}}
-}
-\job[opt]{\en{Students' Representative in the General Counsil of the Castêlo da Maia Schools Grouping}\pt{Representante dos Estudantes no Conselho Geral do AE Castêlo da Maia}}{2017 -- 2018}{
-\en{Castêlo da Maia Schools Grouping}\pt{Agrupamento de Escolas do Castêlo da Maia} (AECM)
-\optional{\\ \en{Single mandate allocated to List A, winner of the election held on 18-10-2017}\pt{Mandato único alocado à Lista A, vencedora da eleição realizada a 18-10-2017}}
-}
-\subsection*{\en{Skills}\pt{Competências}}\vspace{-1em}
+
+\begin{job}{\en{Software Engineer, Intern}\pt{Engenheiro de Software -- Estagiário}}{2022/07 -- 2022/10}
+    SingleStore
+    \\ \en{Managed Services team}\pt{Equipa de Managed Services}
+\end{job}
+\begin{job}{\en{Graduate Teaching Assistant}\pt{Monitor}}{2021/02 -- 2022/07}
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
+    \\\itemtime{DA (\en{Algorithm Design}\pt{Desenho de Algoritmos})}{2022/02 -- 2022/07}
+    \\\itemtime{LBAW (\en{Database and Web Applications Laboratory}\pt{Laboratório de Bases de Dados e Aplicações Web})}{2021/09 -- 2022/02}
+    \\\itemtime{CAL (\en{Algorithm Design and Analysis}\pt{Conceção e Análise de Algoritmos})}{2021/02 -- 2021/07}%
+    % \\ \en{Weekly monitor sessions with practical examples and student projects follow-up}\pt{Responsável por sessões de monitoria semanais com exemplos práticos e\\ acompanhamento dos projetos dos alunos}
+\end{job}
+\begin{job}{\en{Research Assistant}\pt{Investigador Assistente}}{2019/09 -- 2020/09}
+    INESC TEC -- \en{Laboratory of Artificial Intelligence and Decision Support}\pt{Laboratório de Inteligência Artifical e Apoio à Decisão} (LIAAD)\\
+    \textit{Research on European Children and Adults Born Preterm} (RECAP)
+\end{job}
+\begin{jobopt}{\en{Member of the Scientific Committee of the}\pt{Membro do Comité Científico das} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática} -- ONI}}{2018 -- 2020}
+    \en{Invited as former participant of the}\pt{Convidado como ex-participante nas} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática}} \en{and the}\pt{e na} \\
+    \mbox{\textit{International Olympiad in Informatics}}
+\end{jobopt}
+\begin{jobopt}{\en{Students' Representative in the General Counsil of the Castêlo da Maia Schools Grouping}\pt{Representante dos Estudantes no Conselho Geral do AE Castêlo da Maia}}{2017 -- 2018}
+    \en{Castêlo da Maia Schools Grouping}\pt{Agrupamento de Escolas do Castêlo da Maia} (AECM)
+    \optional{\\ \en{Single mandate allocated to List A, winner of the election held on 2017/10/18}\pt{Mandato único alocado à Lista A, vencedora da eleição realizada a 2017/10/18}}
+\end{jobopt}
+
+\subsection*{\en{Skills}\pt{Competências}}\vspace{-1.5em}
 \begin{multicols}{2}
-\noindent
-\skills{\en{Programming languages}\pt{Linguagens de Programação}}{
-\en{Advanced}\pt{Avançado}: C/C++, Python, Javascript, PHP\\
-\en{Intermediate}\pt{Intermédio}: Typescript, Java, SQL, MATLAB, Prolog\\
-\en{Fundamental}\pt{Fundamental}: Go, C\#, Kotlin, R, Assembly (ARM, x86-64), VB, GNU Bash
-}
-\skills{Frameworks}{
-C/C++: Make, CMake, Acutest (unit testing), WxWidgets, SFML
-\\Java: JUnit, Gradle, Lanterna, JaCoCo
-\\Front-end: Bootstrap, Sass, Jekyll
-\\Back-end: Node.js, Laravel, PDO
-\\Databases: SQLite, PostgreSQL, MariaDB
-}
-\skills{\en{Technologies}\pt{Tecnologias}}{
-Git: git flow, submodules, issues, projects, CI/CD
-\\Web technologies: cURL, \en{asynchronous HTTP requests}\pt{pedidos HTTP asíncronos}, SMTP
-\\Containers: Docker, docker-compose, kubernetes (limited experience)
-}
-\skills{\en{Other skills}\pt{Outras competências}}{
-\en{Document elaboration in MS Word, LaTeX and Markdown}\pt{Elaboração de documentos em MS Word, LaTeX e Markdown}
-\\ Microsoft Windows, Linux (Ubuntu), Bash shell
-}
-\skills{\en{Languages}\pt{Línguas}}{
-\en{Portuguese}\pt{Português} (\en{native}\pt{nativo}), \en{English}\pt{Inglês} (C1), \en{Spanish}\pt{Espanhol} (B1), \en{French}\pt{Francês} (A2)
-}
+    \begin{skills}{\en{Programming languages}\pt{Linguagens de Programação}}
+        \en{Advanced}\pt{Avançado}: C/C++, Python, Java, Javascript, PHP\\
+        \en{Intermediate}\pt{Intermédio}: Go, Typescript, SQL, MATLAB, Prolog\\
+        \en{Fundamental}\pt{Fundamental}: C\#, Kotlin, R, Assembly (ARM/x86-64), VB
+    \end{skills}
+    \begin{skills}{Frameworks}
+        ~C++: CMake, Acutest, Catch2, WxWidgets, SFML, CUDA
+        \\Java: JUnit, Gradle, Lanterna, JaCoCo
+        \\Front-end: Bootstrap, Sass, Jekyll
+        \\Back-end: Node.js, Laravel, PDO
+        \\Databases: SQLite, PostgreSQL, MariaDB
+    \end{skills}
+    \begin{skills}{\en{Technologies}\pt{Tecnologias}}
+        ~Version control: git flow, submodules, boards, CI/CD
+        \\Web: \en{async requests}\pt{pedidos asíncronos}, SMTP, WebSocket, GraphQL, cURL
+        \\Containers: Docker, docker-compose, Kubernetes
+        \\Others: Grafana, Azure
+    \end{skills}
+    \begin{skills}{\en{Other skills}\pt{Outras competências}}
+        \en{Document elaboration in MS Word, LaTeX and Markdown}\pt{Elaboração de documentos em MS Word, LaTeX e Markdown}
+        \\ Microsoft Windows, Linux (Ubuntu), Bash shell
+    \end{skills}
+    \begin{skills}{\en{Languages}\pt{Línguas}}
+        \en{Portuguese}\pt{Português} (\en{native}\pt{nativo}), \en{English}\pt{Inglês} (C1), \en{Spanish}\pt{Espanhol} (B1), \en{French}\pt{Francês} (A2)
+    \end{skills}
 \end{multicols} \vspace{-1.0em}
-\subsection*{\en{Publications \& articles}\pt{Publicações e artigos}}
-\pub{AI Approach to Population Demographics using Satellite Imagery}{2019}{
-\textit{London International Youth Science Forum 2019} |
-\en{Supported by Calouste Gulbenkian Foundation}\pt{Apoiado pela Fundação Calouste Gulbenkian}
-}
+
 \subsection*{\en{Scholarships}\pt{Bolsas}}
-\job{\en{Gulbenkian Scholarship}\pt{Bolsa Gulbenkian}}{24-07-2019 -- 07-08-2019}{
-\en{Participation in the}\pt{Participação no} \textit{London International Youth Science Forum 2019}
-\\ Imperial College London \& Royal Geographical Society, London
-\\ \en{Poster presentation}\pt{Apresentação de poster} | \en{Supported by Calouste Gulbenkian Foundation}\pt{Apoiada pela Fundação Calouste Gulbenkian}
-}
-\job{\textit{\en{Merit Scholarship}\pt{Bolsa de Mérito}} \en{of the University of Porto}\pt{da Universidade do Porto}}{2018/19}{
-\en{Granted by the University of Porto to the students with best academic results in that year}\pt{Concedida pela Universidade do Porto aos estudantes com os melhores resultados académicos desse ano}
-}
+\begin{job}{\en{Santander Erasmus Scholarship}\pt{Bolsa Santander Erasmus}}{2022/10 -- 2023/03}
+    \en{Erasmus+ Studies}\pt{Programa Erasmus+}, Technical University of Munich | \en{Supported by Santander Bank}\pt{Apoiada pelo Banco Santander Totta}
+\end{job}
+\begin{job}{\en{Gulbenkian Scholarship}\pt{Bolsa Gulbenkian}}{2019/07 -- 2019/08} %2019/07/24 -- 2019/08/07
+    \en{Participation in the}\pt{Participação no} \textit{London International Youth Science Forum 2019}
+    \\ \en{Poster presentation}\pt{Apresentação de poster} | \en{Supported by Calouste Gulbenkian Foundation}\pt{Apoiada pela Fundação Calouste Gulbenkian}
+\end{job}
+\begin{job}{\textit{\en{Merit Scholarship}\pt{Bolsa de Mérito}} \en{of the University of Porto}\pt{da Universidade do Porto}}{2018/19}
+    \en{Granted by the University of Porto to the students with best academic results in that year}\pt{Concedida pela Universidade do Porto aos estudantes com os melhores resultados académicos desse ano}
+\end{job}
+
 \subsection*{\en{Volunteering}\pt{Voluntariado}}
-\job{\textit{European Union Science Olympiad 2019 -- Almada}}{04-05-2019 -- 11-05-2019}{
-\en{Guide of teams \textit{Italy A} and \textit{Italy B} in the \textit{European Union Science Olympiad 2019}, in Almada and Lisbon}\pt{Guia das equipas \textit{Italy A} e \textit{Italy B} na \textit{European Union Science Olympiad 2019}, em Almada e Lisboa}
+\begin{job}{\textit{European Union Science Olympiad 2019 -- Almada}}{2019/05}%2019/05/04 -- 2019/05/11
+    \en{Guide of teams \textit{Italy A} and \textit{Italy B} in the \textit{European Union Science Olympiad 2019}, in Almada and Lisbon}\pt{Guia das equipas \textit{Italy A} e \textit{Italy B} na \textit{European Union Science Olympiad 2019}, em Almada e Lisboa}
+    \optional{
+        \\
+        \en{Organization of the EUSO and monitoring of participating students during the week, guaranteeing their well-being and providing necessary support to foreign students, namely by making their stay in Portugal easier with translations to English and socio-cultural context during events.}
+        \pt{Organização da EUSO e acompanhamento dos estudantes participantes durante a semana, garantindo o seu bem-estar e fornecendo o apoio necessário aos estudantes estrangeiros, nomeadamente com tradução para Inglês e contextualização socio-cultural durante os eventos.}
+    }
+\end{job}
 \optional{
-\\
-\en{Organization of the EUSO and monitoring of participating students during the week, guaranteeing their well-being and providing necessary support to foreign students, namely by making their stay in Portugal easier with translations to English and socio-cultural context during events.}
-\pt{Organização da EUSO e acompanhamento dos estudantes participantes durante a semana, garantindo o seu bem-estar e fornecendo o apoio necessário aos estudantes estrangeiros, nomeadamente com tradução para Inglês e contextualização socio-cultural durante os eventos.}
-}
-}
-\optional{
-\subsection*{\en{Promotion of Science}\pt{Promoção da Ciência}}
-\job{\en{Interview to RTP about the Silver Medal in}\pt{Entrevista à RTP sobre a Medalha de Prata na} \textit{EUSO2017}}{16-05-2017}{
-\en{Interview given at the request of the}\pt{Entrevista concedida a pedido da} \en{\textit{Radio and Television of Portugal} (RTP)}\pt{RTP} \en{about the Silver medal}\pt{sobre a Medalha de Prata}\\
-\en{won by the Portuguese Team A that I led at the}\pt{conquistada pela Equipa Portuguesa A que liderei na} \textit{European Union Science Olympiad 2017 -- Copenhagen}\\
-\url{https://www.rtp.pt/noticias/pais/portugal-ganhou-medalha-de-prata-nas-olimpiadas-europeias-da-ciencia_v1001995}
-}
+    \subsection*{\en{Promotion of Science}\pt{Promoção da Ciência}}
+    \begin{job}{\en{Interview to RTP about the Silver Medal in}\pt{Entrevista à RTP sobre a Medalha de Prata na} \textit{EUSO2017}}{2017/05}%2017/05/16
+        \en{Interview given at the request of the}\pt{Entrevista concedida a pedido da} \en{\textit{Radio and Television of Portugal} (RTP)}\pt{RTP} \en{about the Silver medal}\pt{sobre a Medalha de Prata}\\
+        \en{won by the Portuguese Team A that I led at the}\pt{conquistada pela Equipa Portuguesa A que liderei na} \textit{European Union Science Olympiad 2017 -- Copenhagen}\\
+        \url{https://www.rtp.pt/noticias/pais/portugal-ganhou-medalha-de-prata-nas-olimpiadas-europeias-da-ciencia_v1001995}
+    \end{job}
 }
 \subsection*{\en{Accomplishments}\pt{Prémios}}
-\job{\en{Silver Medal in}\pt{Medalha de Prata na} \textit{\en{Inter-University Programming Marathon}\pt{Maratona Inter-Universitária de Programação} -- MIUP2022}}{15-10-2021}{
-\en{Faculty of Sciences and Technology of the University of Coimbra}\pt{Faculdade de Ciências e Tecnologia da Universidade de Coimbra} |
-\en{2nd place in global ranking}\pt{2º lugar na classificação geral}
-}
-\job{\en{Participation in}\pt{Participação no} \textit{SouthWestern Europe Regional Contest -- SWERC2021-22}}{23-04-2022 -- 24-04-2022}{
-Politecnico di Milano |
-\en{26th place in general ranking}\pt{26º lugar na classificação geral}
-}
-\job{\en{1st place in}\pt{1º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2021}}{14-11-2021 -- 17-11-2021}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
-}
-\job{\en{Bronze Medal in}\pt{Medalha de Bronze na} \textit{\en{Inter-University Programming Marathon}\pt{Maratona Inter-Universitária de Programação} -- MIUP2021}}{09-10-2021}{
-Instituto Superior Técnico, \en{Lisbon}\pt{Lisboa} |
-\en{4th place in global ranking}\pt{4º lugar na classificação geral}
-}
-\job{\en{Participation in}\pt{Participação no} \textit{SouthWestern Europe Regional Contest -- SWERC2020-21}}{06-03-2021 -- 07-03-2021}{
-Institut Polytechnique de Paris |
-\en{63rd place in general ranking}\pt{63º lugar na classificação geral}
-}
-\job{\en{2nd place in}\pt{2º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2020}}{08-11-2020 -- 11-11-2020}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
-}
-\job{\en{Participation in}\pt{Participação no} \textit{SouthWestern Europe Regional Contest -- SWERC2019-20}}{24-01-2020 -- 27-01-2020}{
-Institut Polytechnique de Paris |
-\en{40th place in general ranking}\pt{40º lugar na classificação geral}
-}
-\job{\en{1st place in}\pt{1º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2019}}{27-10-2019 -- 30-10-2019}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
-}
-\job{\en{6th place in}\pt{6º lugar na} \textit{\en{Inter-University Programming Marathon}\pt{Maratona Inter-Universitária de Programação} -- MIUP2019}}{12-10-2019}{
-Instituto Superior Técnico, \en{Lisbon}\pt{Lisboa}
-}
-\job{\textit{\en{Incentive Prize for distinguished students}\pt{Prémio Incentivo para estudantes distintos}} \en{of the University of Porto}\pt{da Universidade do Porto}}{2018/19}{
-\optional{\en{Granted by the University of Porto to distinguished students on their first year (freshman year)}\pt{Atribuído pela Universidade do Porto a alunos distintos no seu primeiro ano}.\\}
-\en{For obtaining the average grade of 19.03/20.00 at the end of the 1st year}\pt{Pela obtenção da classificação 19.03/20.00 ao fim do 1º ano}\\
-\en{Best grade of FEUP}\pt{Melhor classificação da FEUP},
-\en{2nd best grade of the University of Porto}\pt{2ª melhor classificação da Universidade do Porto}
-}
-\job[opt]{\en{Participation in}\pt{Participação no} \textit{Google Code Jam}}{2019}{
-Qualification round -- 1093rd; round 1A -- 2738th; round 1B -- 1848th; round 1C -- 3897th
-}
-\job[opt]{\en{Participation in}\pt{Participação no} \textit{Google Hash Code 2019}}{28-03-2019}{
-\textit{Porto Hub} -- \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}\\
-7th place in \textit{Porto Hub}, 31st place at national level, 2345th in global ranking
-}
-\job[opt]{\textit{\en{School Excellence Prize}\pt{Prémio de Excelência Escolar} 2017/2018}}{22-02-2019}{
-\en{Granted by the Municipality of Maia, in the}\pt{Atribuído pela Câmara Municipal da Maia, na} \textit{\en{Xth Education Gala}\pt{X Gala da Educação}}
-}
-\job{\en{Participation in}\pt{Participação no} \textit{SouthWestern Europe Regional Contest -- SWERC2018} (\textit{ICPC2018})}{01-12-2018 -- 02-12-2018}{
-Télécom ParisTech |
-\en{33rd place in general ranking}\pt{33º lugar na classificação geral}
-}
-\job{\en{1st place in}\pt{1º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2018}}{29-10-2018 -- 01-11-2018}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
-}
-\job{\en{Bronze Medal in}\pt{Medalha de Bronze na} \textit{\en{Inter-University Programming Marathon}\pt{Maratona Inter-Universitária de Programação} -- MIUP2018}}{13-10-2018}{
-\en{Department of Informatics of the University of Beira Interior}\pt{Departamento de Informática da Universidade da Beira Interior (UBI)} |
-\en{4th place in general ranking}\pt{4º lugar na classificação geral}
-}
-\job{\en{Participation in}\pt{Participação na} \textit{30th International Olympiad in Informatics -- IOI2018}}{01-09-2018 -- 08-09-2018}{
-Tsukuba, Ibaraki, \en{Japan}\pt{Japão}
-}
-\job{\en{Honourable Mention in}\pt{Menção Honrosa na} \textit{49th International Physics Olympiad -- IPhO2018}}{21-07-2018 -- 29-07-2018}{
-\en{Lisbon}\pt{Lisboa}, Portugal |
-\en{2nd place among the portuguese competitors, 226th in global ranking}\pt{2º lugar entre os participantes portugueses, 226º lugar na classificação global}
-}
-\job[opt]{Silver Medal in \textit{Ibero-American Competition of Informatics and Computation -- CIIC2018}}{09-06-2018}{
-Department of Computer Science -- Faculty of Sciences of the University of Porto \\(for the portuguese students)
-}
-\job[opt]{\en{7th place on the National Finals of}\pt{7º lugar na Final Nacional das} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática} -- ONI2018}}{07-05-2018}{
-\en{Department of Computer Science}\pt{Departamento de Ciência de Computadores} -- \en{Faculty of Sciences of the University of Porto}\pt{Faculdade de Ciências da Universidade do Porto}\\
-\en{Invited to participate in the preparation stage for the}\pt{Convidado a participar na preparação para a} \textit{International Olympiad in Informatics 2018}
-}
-\job[opt]{9th place in \textit{Mat12 2018}}{26-04-2018}{
-University of Aveiro -- \textit{National Science Competitions} (CNC) \\
-\textit{Mat12} -- mathematics competition, category 12th grade
-}
-\job[opt]{\en{3rd place in Qualification Phase of}\pt{3º lugar na Fase de Qualificação das} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática} -- ONI2018}}{12-04-2018 -- 14-04-2018}{
-\en{Invited to participate in the National Finals of}\pt{Convidado a participar na Final Nacional das} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática} 2018}
-}
-\job[opt]{\en{Participation in the National Finals of}\pt{Participação na Final Nacional das} \textit{\en{36th Portuguese Mathematics Olympiad}\pt{XXXVI Olimpíadas Portuguesas de Matemática}}}{22-03-2018 -- 25-03-2018}{
-\en{Mirandela Schools Grouping}\pt{Agrupamento de Escolas de Mirandela}\\
-\en{Category B}\pt{Categoria B} (\en{10th-12th grades}\pt{10º-12º anos})
-}
-\job[opt]{Silver Medal in \textit{41st Paulistan Mathematics Olympiad}}{28-10-2017}{
-Department of Mathematics of the University of Coimbra (for the portuguese students)\\
-Category Gamma (11th/12th grades)
-}
-\job[opt]{\en{Participation in}\pt{Participação nas} \textit{\en{National Physics Olympiad}\pt{Olimpíadas Nacionais de Física} 2017}}{02-06-2017 -- 03-06-2017}{
-\en{Faculty of Sciences of the University of Lisbon}\pt{Faculdade de Ciências da Universidade de Lisboa}\\
-\en{Category B}\pt{Categoria B} (\en{up to 11th grade}\pt{até ao 11º ano})
-\optional{\\Invited to join Project Quark!}
-}
-\job{\en{Silver Medal in}\pt{Medalha de Prata na} \textit{European Union Science Olympiad 2017 -- Copenhagen}}{07-05-2017 -- 14-05-2017}{
-\textit{University of Copenhagen} \en{and}\pt{e} \textit{Technical University of Denmark} |
-\en{6th place in general ranking}\pt{6º lugar na classificação geral}
-}
-\job[opt]{\en{Gold Medal in}\pt{Medalha de Ouro nas} \textit{\en{Regional Physics Olympiad}\pt{Olimpíadas Regionais de Física} 2017 -- \en{North Region}\pt{Região Norte}}}{29-04-2017}{
-\en{Department of Physics and Astronomy}\pt{Departamento de Física e Astronomia} -- \en{Faculty of Sciences of the University of Porto}\pt{Faculdade de Ciências da Universidade do Porto}\\
-\en{Category B}\pt{Categoria B} (\en{up to 11th grade}\pt{até ao 11º ano})\\
-\en{Invited to participate in}\pt{Convidado a participar nas} \textit{\en{National Physics Olympiad}\pt{Olimpíadas Nacionais de Física} 2017}
-}
-\job[opt]{Bronze Medal in the Semifinals of the \textit{Chemistry Olympiad\textsuperscript{+} 2017}}{11-03-2017}{
-Department of Chemistry and Biochemistry -- Faculty of Sciences of the University of Porto\\
-Category + (plus) (10th/11th grades)
-}
-\job[opt]{\en{Participation in}\pt{Participação no} \textit{40th Paulistan Mathematics Olympiad}}{19-11-2016}{
-Department of Mathematics of the University de Coimbra (for the portuguese students)\\
-Category Gamma (11th/12th grades)
-}
-\job[opt]{11th place in \textit{Mat12 2016}}{11-05-2016}{
-University of Aveiro -- \textit{National Science Competitions} (CNC) \\
-\textit{Mat12} -- mathematics competition, category 10th grade
-}
-\job[opt]{Bronze Medal in \textit{39th Paulistan Mathematics Olympiad}}{07-11-2015}{
-Department of Mathematics of the University of Coimbra (for the portuguese students)\\
-Category Beta (9th/10th grades)
-}
-\job{\en{Gold Medal in}\pt{Medalha de Ouro nas} \textit{\en{National Physics Olympiad}\pt{Olimpíadas Nacionais de Física} 2015}}{05-06-2015 -- 06-06-2015}{
-\en{Electricity Museum}\pt{Museu da Eletricidade}, \en{Lisbon}\pt{Lisboa}, Portugal |
-\en{Category A}\pt{Categoria A} (\en{up to 9th grade}\pt{até ao 9º ano})
-\optional{\\ \en{Invited to participate in the selection stage for the}\pt{Convidado a participar na fase de seleção para a} \textit{European Union Science Olympiad 2017 -- Copenhagen}}
-}
-\job[opt]{19th place in \textit{Equamat 2015}}{13-05-2015}{
-University of Aveiro -- \textit{National Science Competitions} (CNC) \\
-\textit{Equamat} -- mathematics competition, category 9th grade
-}
-\job[opt]{\en{Participation in}\pt{Participação no} \textit{21st May Olympiad}}{09-05-2015}{
-Department of Mathematics of the University of Coimbra (for the portuguese students)\\
-Level 2 (up to 15 years old)
-}
-\job[opt]{\en{Bronze Medal in}\pt{Medalha de Bronze nas} \textit{\en{Regional Physics Olympiad}\pt{Olimpíadas Regionais de Física} 2015 -- \en{North Region}\pt{Região Norte}}}{18-04-2015}{
-\en{Department of Physics and Astronomy}\pt{Departamento de Física e Astronomia} -- \en{Faculty of Sciences of the University of Porto}\pt{Faculdade de Ciências da Universidade do Porto}\\
-\en{Category A}\pt{Categoria A} (\en{up to 9th grade}\pt{até ao 9º ano})\\
-\en{Invited to participate in}\pt{Convidado a participar nas} \textit{\en{National Physics Olympiad}\pt{Olimpíadas Nacionais de Física} 2015}
-}
-\job[opt]{\en{Participation in}\pt{Participação no} the Semifinals of the \textit{Chemistry Olympiad Júnior 2015}}{11-04-2015}{
+\begin{job}{\en{1st place in}\pt{1º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2022}}{2022/10}%2022/10/31 -- 2022/11/02
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
+\end{job}
+\begin{job}{\en{Silver Medal in}\pt{Medalha de Prata na} \textit{\en{Inter-University Programming Marathon}\pt{Maratona Inter-Universitária de Programação} -- MIUP2022}}{2021/10}%2021/10/15
+    \en{Faculty of Sciences and Technology of the University of Coimbra}\pt{Faculdade de Ciências e Tecnologia da Universidade de Coimbra} |
+    \en{2nd place in global ranking}\pt{2º lugar na classificação geral}
+\end{job}
+\begin{job}{\en{Participation in}\pt{Participação no} \textit{SouthWestern Europe Regional Contest -- SWERC2021-22}}{2022/04}%2022/04/23 -- 2022/04/24
+    Politecnico di Milano |
+    \en{26th place in general ranking}\pt{26º lugar na classificação geral}
+\end{job}
+\begin{jobopt}{\en{1st place in}\pt{1º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2021}}{2021/11}%2021/11/14 -- 2021/11/17
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
+\end{jobopt}
+\begin{job}{\en{Bronze Medal in}\pt{Medalha de Bronze na} \textit{\en{Inter-University Programming Marathon}\pt{Maratona Inter-Universitária de Programação} -- MIUP2021}}{2021/10}%2021/10/09
+    Instituto Superior Técnico, \en{Lisbon}\pt{Lisboa} |
+    \en{4th place in global ranking}\pt{4º lugar na classificação geral}
+\end{job}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{SouthWestern Europe Regional Contest -- SWERC2020-21}}{2021/03}%2021/03/06 -- 2021/03/07
+    Institut Polytechnique de Paris |
+    \en{63rd place in general ranking}\pt{63º lugar na classificação geral}
+\end{jobopt}
+\begin{jobopt}{\en{2nd place in}\pt{2º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2020}}{2020/11}%2020/11/08 -- 2020/11/11
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
+\end{jobopt}
+\begin{job}{\en{Participation in}\pt{Participação no} \textit{SouthWestern Europe Regional Contest -- SWERC2019-20}}{2020/01}%2020/01/24 -- 2020/01/27
+    Institut Polytechnique de Paris |
+    \en{40th place in general ranking}\pt{40º lugar na classificação geral}
+\end{job}
+\begin{jobopt}{\en{1st place in}\pt{1º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2019}}{2019/10}%2019/10/27 -- 2019/10/30
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
+\end{jobopt}
+\begin{job}{\en{6th place in}\pt{6º lugar na} \textit{\en{Inter-University Programming Marathon}\pt{Maratona Inter-Universitária de Programação} -- MIUP2019}}{2019/10}%2019/10/12
+    Instituto Superior Técnico, \en{Lisbon}\pt{Lisboa}
+\end{job}
+\begin{jobopt}{\textit{\en{Incentive Prize for distinguished students}\pt{Prémio Incentivo para estudantes distintos}} \en{of the University of Porto}\pt{da Universidade do Porto}}{2018/19}
+    \optional{\en{Granted by the University of Porto to distinguished students on their first year (freshman year)}\pt{Atribuído pela Universidade do Porto a alunos distintos no seu primeiro ano}.\\}
+    \en{For obtaining the average grade of 19.03/20.00 at the end of the 1st year}\pt{Pela obtenção da classificação 19.03/20.00 ao fim do 1º ano}\\
+    \en{Best grade of FEUP}\pt{Melhor classificação da FEUP},
+    \en{2nd best grade of the University of Porto}\pt{2ª melhor classificação da Universidade do Porto}
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{Google Code Jam}}{2019}
+    Qualification round -- 1093rd; round 1A -- 2738th; round 1B -- 1848th; round 1C -- 3897th
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{Google Hash Code 2019}}{2019/03}%2019/03/28
+    \textit{Porto Hub} -- \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}\\
+    7th place in \textit{Porto Hub}, 31st place at national level, 2345th in global ranking
+\end{jobopt}
+\begin{jobopt}{\textit{\en{School Excellence Prize}\pt{Prémio de Excelência Escolar} 2017/2018}}{2019/02}%2019/02/22
+    \en{Granted by the Municipality of Maia, in the}\pt{Atribuído pela Câmara Municipal da Maia, na} \textit{\en{Xth Education Gala}\pt{X Gala da Educação}}
+\end{jobopt}
+\begin{job}{\en{Participation in}\pt{Participação no} \textit{SouthWestern Europe Regional Contest -- SWERC2018} (\textit{ICPC2018})}{2018/12}%2018/12/01 -- 2018/12/02
+    Télécom ParisTech |
+    \en{33rd place in general ranking}\pt{33º lugar na classificação geral}
+\end{job}
+\begin{job}{\en{1st place in}\pt{1º lugar no} \textit{\en{Programming Competition of the Week of Informatics}\pt{Concurso de Programação da Semana de Informática} 2018}}{2018/10}%2018/10/29 -- 2018/11/01
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}
+\end{job}
+\begin{job}{\en{Bronze Medal in}\pt{Medalha de Bronze na} \textit{\en{Inter-University Programming Marathon}\pt{Maratona Inter-Universitária de Programação} -- MIUP2018}}{2018/10}%2018/10/13
+    \en{Department of Informatics of the University of Beira Interior}\pt{Departamento de Informática da Universidade da Beira Interior (UBI)} |
+    \en{4th place in general ranking}\pt{4º lugar na classificação geral}
+\end{job}
+\begin{job}{\en{Participation in}\pt{Participação na} \textit{30th International Olympiad in Informatics -- IOI2018}}{2018/09}%2018/09/01 -- 2018/09/08}
+    Tsukuba, Ibaraki, \en{Japan}\pt{Japão}
+\end{job}
+\begin{job}{\en{Honourable Mention in}\pt{Menção Honrosa na} \textit{49th International Physics Olympiad -- IPhO2018}}{2018/07}%2018/07/21 -- 2018/07/29
+    \en{Lisbon}\pt{Lisboa}, Portugal |
+    \en{2nd place among the portuguese competitors, 226th in global ranking}\pt{2º lugar entre os participantes portugueses, 226º lugar na classificação global}
+\end{job}
+\begin{jobopt}{Silver Medal in \textit{Ibero-American Competition of Informatics and Computation -- CIIC2018}}{2018/06}%2018/06/09
+    Department of Computer Science -- Faculty of Sciences of the University of Porto \\(for the portuguese students)
+\end{jobopt}
+\begin{jobopt}{\en{7th place on the National Finals of}\pt{7º lugar na Final Nacional das} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática} -- ONI2018}}{2018/05}%2018/05/07
+    \en{Department of Computer Science}\pt{Departamento de Ciência de Computadores} -- \en{Faculty of Sciences of the University of Porto}\pt{Faculdade de Ciências da Universidade do Porto}\\
+    \en{Invited to participate in the preparation stage for the}\pt{Convidado a participar na preparação para a} \textit{International Olympiad in Informatics 2018}
+\end{jobopt}
+\begin{jobopt}{9th place in \textit{Mat12 2018}}{2018/04}%2018/04/26
+    University of Aveiro -- \textit{National Science Competitions} (CNC) \\
+    \textit{Mat12} -- mathematics competition, category 12th grade
+\end{jobopt}
+\begin{jobopt}{\en{3rd place in Qualification Phase of}\pt{3º lugar na Fase de Qualificação das} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática} -- ONI2018}}{2018/04/12 -- 2018/04/14}
+    \en{Invited to participate in the National Finals of}\pt{Convidado a participar na Final Nacional das} \textit{\en{National Informatics Olympiad}\pt{Olimpíadas Nacionais de Informática} 2018}
+\end{jobopt}
+\begin{jobopt}{\en{Participation in the National Finals of}\pt{Participação na Final Nacional das} \textit{\en{36th Portuguese Mathematics Olympiad}\pt{XXXVI Olimpíadas Portuguesas de Matemática}}}{2018/03/22 -- 2018/03/25}
+    \en{Mirandela Schools Grouping}\pt{Agrupamento de Escolas de Mirandela}\\
+    \en{Category B}\pt{Categoria B} (\en{10th-12th grades}\pt{10º-12º anos})
+\end{jobopt}
+\begin{jobopt}{Silver Medal in \textit{41st Paulistan Mathematics Olympiad}}{2017/10}%2017/10/28
+    Department of Mathematics of the University of Coimbra (for the portuguese students)\\
+    Category Gamma (11th/12th grades)
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação nas} \textit{\en{National Physics Olympiad}\pt{Olimpíadas Nacionais de Física} 2017}}{2017/06/02 -- 2017/06/03}
+    \en{Faculty of Sciences of the University of Lisbon}\pt{Faculdade de Ciências da Universidade de Lisboa}\\
+    \en{Category B}\pt{Categoria B} (\en{up to 11th grade}\pt{até ao 11º ano})
+    \optional{\\Invited to join Project Quark!}
+\end{jobopt}
+\begin{job}{\en{Silver Medal in}\pt{Medalha de Prata na} \textit{European Union Science Olympiad 2017 -- Copenhagen}}{2017/05}%2017/05/07 -- 2017/05/14
+    \textit{University of Copenhagen} \en{and}\pt{e} \textit{Technical University of Denmark} |
+    \en{6th place in general ranking}\pt{6º lugar na classificação geral}
+\end{job}
+\begin{jobopt}{\en{Gold Medal in}\pt{Medalha de Ouro nas} \textit{\en{Regional Physics Olympiad}\pt{Olimpíadas Regionais de Física} 2017 -- \en{North Region}\pt{Região Norte}}}{2017/04}%2017/04/29
+    \en{Department of Physics and Astronomy}\pt{Departamento de Física e Astronomia} -- \en{Faculty of Sciences of the University of Porto}\pt{Faculdade de Ciências da Universidade do Porto}\\
+    \en{Category B}\pt{Categoria B} (\en{up to 11th grade}\pt{até ao 11º ano})\\
+    \en{Invited to participate in}\pt{Convidado a participar nas} \textit{\en{National Physics Olympiad}\pt{Olimpíadas Nacionais de Física} 2017}
+\end{jobopt}
+\begin{jobopt}{Bronze Medal in the Semifinals of the \textit{Chemistry Olympiad\textsuperscript{+} 2017}}{2017/03}%2017/03/11
+    Department of Chemistry and Biochemistry -- Faculty of Sciences of the University of Porto\\
+    Category + (plus) (10th/11th grades)
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{40th Paulistan Mathematics Olympiad}}{2016/11}%2016/11/19
+    Department of Mathematics of the University de Coimbra (for the portuguese students)\\
+    Category Gamma (11th/12th grades)
+\end{jobopt}
+\begin{jobopt}{11th place in \textit{Mat12 2016}}{2016/05}%2016/05/11
+    University of Aveiro -- \textit{National Science Competitions} (CNC) \\
+    \textit{Mat12} -- mathematics competition, category 10th grade
+\end{jobopt}
+\begin{jobopt}{Bronze Medal in \textit{39th Paulistan Mathematics Olympiad}}{2015/11}%2015/11/07
+    Department of Mathematics of the University of Coimbra (for the portuguese students)\\
+    Category Beta (9th/10th grades)
+\end{jobopt}
+\begin{job}{\en{Gold Medal in}\pt{Medalha de Ouro nas} \textit{\en{National Physics Olympiad}\pt{Olimpíadas Nacionais de Física} 2015}}{2015/06}%2015/06/05 -- 2015/06/06
+    \en{Electricity Museum}\pt{Museu da Eletricidade}, \en{Lisbon}\pt{Lisboa}, Portugal |
+    \en{Category A}\pt{Categoria A} (\en{up to 9th grade}\pt{até ao 9º ano})
+    \optional{\\ \en{Invited to participate in the selection stage for the}\pt{Convidado a participar na fase de seleção para a} \textit{European Union Science Olympiad 2017 -- Copenhagen}}
+\end{job}
+\begin{jobopt}{19th place in \textit{Equamat 2015}}{2015/05}%2015/05/13
+    University of Aveiro -- \textit{National Science Competitions} (CNC) \\
+    \textit{Equamat} -- mathematics competition, category 9th grade
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{21st May Olympiad}}{2015/05}%2015/05/09
+    Department of Mathematics of the University of Coimbra (for the portuguese students)\\
+    Level 2 (up to 15 years old)
+\end{jobopt}
+\begin{jobopt}{\en{Bronze Medal in}\pt{Medalha de Bronze nas} \textit{\en{Regional Physics Olympiad}\pt{Olimpíadas Regionais de Física} 2015 -- \en{North Region}\pt{Região Norte}}}{2015/04}%2015/04/18
+    \en{Department of Physics and Astronomy}\pt{Departamento de Física e Astronomia} -- \en{Faculty of Sciences of the University of Porto}\pt{Faculdade de Ciências da Universidade do Porto}\\
+    \en{Category A}\pt{Categoria A} (\en{up to 9th grade}\pt{até ao 9º ano})\\
+    \en{Invited to participate in}\pt{Convidado a participar nas} \textit{\en{National Physics Olympiad}\pt{Olimpíadas Nacionais de Física} 2015}
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} the Semifinals of the \textit{Chemistry Olympiad Júnior 2015}}{2015/04}%2015/04/11
 Department of Chemistry and Biochemistry -- Faculty of Sciences of the University of Porto\\
 Category Junior (8th/9th grades)
-}
-\job[opt]{\en{Bronze Medal in the National Finals of the}\pt{Medalha de Bronze na Final Nacional das} \textit{\en{33rd Portuguese Mathematics Olympiad}\pt{XXXIII Olimpíadas Portuguesas de Matemática}}}{19-03-2015 -- 22-03-2015}{
-\en{Augusto César da Silva Ferreira Secondary School}\pt{Escola Secundária Augusto César da Silva Ferreira}, Rio Maior\\
-\en{Category A}\pt{Categoria A} (\en{8th/9th grades}\pt{8º/9º anos})
-\optional{\\Invited to join Project Delfos}
-}
-\job[opt]{\en{Participation in}\pt{Participação no} \textit{XX May Olympiad}}{10-05-2014}{
-Department of Mathematics of the University of Coimbra (for the portuguese students)\\
-Level 2 (up to 15 years old)
-}
-\job[opt]{12th place in \textit{Equamat 2014}}{29-04-2014}{
-University of Aveiro -- \textit{National Science Competitions} (CNC) \\
-\textit{Equamat} -- mathematics competition, category 8th grade
-}
-\job[opt]{Bronze Medal in \textit{37th Paulistan Mathematics Olympiad}}{09-11-2013}{
-Department of Mathematics of the University of Coimbra (for the portuguese students)\\
-Category Alpha (7th/8th grades)
-}
-\job[opt]{Participação nas \textit{XIX May Olympiad}}{11-05-2013}{
-Department of Mathematics of the University of Coimbra (for the portuguese students)\\
-Level 1 (up to 13 years old)
-}
-\job[opt]{\en{Participation in}\pt{Participação no} \textit{Solar Cars Design and Race Challenge -- AT THE SPEED OF THE SUN}}{05-05-2013}{
-Municipality of Maia
-}
-\job[opt]{\en{Participation in}\pt{Participação no} \textit{Mathematical Kangaroo 2013}}{04-04-2013}{
-Category Benjamin (7th/8th grades)
-}
-\job[opt]{\en{Participation in}\pt{Participação no} the National Finals of the \textit{31st Portuguese Mathematics Olympiad}}{14-03-2013 -- 17-03-2013}{
-Francisco Cabrita Basic School of 2nd and 3rd cycles, Albufeira\\
-Category Junior (6th/7th grades)
-}
-\job[opt]{1st place in the competition \textit{Problem of the Month}}{2011/2012}{
-Held during school year 2011/12 at Castêlo da Maia Basic School of 2nd and 3rd cycles, Maia
-}
-\job[opt]{7th place in \textit{Mathematical Kangaroo 2012}}{15-03-2012}{
-Category Ecolier (5th/6th grades)\\
-1st place in school, 7th place in national ranking
-}
-\job[opt]{\en{Participation in}\pt{Participação no} \textit{Mathematical Kangaroo 2011}}{17-03-2011}{
-Category Ecolier (5th/6th grades)
-}
-\subsection*{\en{Forums, lectures, conferences \& congresses}\pt{Fóruns, palestras, conferências e congressos}}
-\job[opt]{\textit{Week of Informatics 2019}}{28-10-2019 -- 31-10-2019}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}\\
-Week of lectures and workshops promoted by the Nucleus of Informatics of the Students' Association of FEUP (AEFEUP)
-}
-\job{\textit{London International Youth Science Forum 2019}}{24-07-2019 -- 07-08-2019}{
-Imperial College London \& Royal Geographical Society, \en{London}\pt{Londres}\\
-\en{Poster presentation}\pt{Apresentação de Poster} | \en{Supported by the Calouste Gulbenkian Foundation}\pt{Apoiada pela Fundação Calouste Gulbenkian}
-}
-\job[opt]{\textit{Evolution and Future of Artificial Intelligence -- Technical, Economic, Social and Cultural Repercussions}}{11-03-2019}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}\\
-Seminar organized under the cycle \textit{New Paradigms, Debates and Iniciatives at FEUP}
-}
-\job[opt]{\textit{Week of Informatics 2018}}{29-10-2018 -- 01-11-2018}{
-\en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}\\
-Week of lectures and workshops promoted by the Nucleus of Informatics of the Students' Association of FEUP (AEFEUP)
-}
-\job[opt]{\en{Youth Municipal Assembly of Maia}\pt{Assembleia Municipal Jovem da Maia}}{23-04-2018}{
-\en{Municipal Chamber of Maia}\pt{Câmara Municipal da Maia}
-\\ \en{Took place as part of the Commemorations of the 44th anniversary of the Carnation Revolution}\pt{Realizado no contexto das Comemorações do 44º aniversário da Revolução de 25 de Abril}
-\\ \en{Deputee of the Youth Municipal Assembly, representing Castêlo da Maia Schools Grouping}\pt{Deputado da Assembleia Municipal Jovem, em representação do Agrupamento de Escolas do Castêlo da Maia}
-\\ \en{Intervention in the period before agenda -- Accessibility in the municipality, and garbage management}\pt{Intervenção no período antes da agenda -- Acessibilidade no município, e gestão de resíduos}
-}
-\job[opt]{\textit{CERN’s International Masterclasses Porto -- 2018}}{10-03-2018}{
-Department of Physics and Astronomy -- Faculty of Sciences of the University of Porto\\
-Lectures about particle physics, particle collision analysis with data from CERN and\\
-discussion of results with other european centers and scientists at CERN
-}
+\end{job}
+\begin{jobopt}{\en{Bronze Medal in the National Finals of the}\pt{Medalha de Bronze na Final Nacional das} \textit{\en{33rd Portuguese Mathematics Olympiad}\pt{XXXIII Olimpíadas Portuguesas de Matemática}}}{2015/03/19 -- 2015/03/22}
+    \en{Augusto César da Silva Ferreira Secondary School}\pt{Escola Secundária Augusto César da Silva Ferreira}, Rio Maior\\
+    \en{Category A}\pt{Categoria A} (\en{8th/9th grades}\pt{8º/9º anos})
+    \optional{\\Invited to join Project Delfos}
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{XX May Olympiad}}{2014/05}%2014/05/10
+    Department of Mathematics of the University of Coimbra (for the portuguese students)\\
+    Level 2 (up to 15 years old)
+\end{jobopt}
+\begin{jobopt}{12th place in \textit{Equamat 2014}}{2014/04}%2014/04/29
+    University of Aveiro -- \textit{National Science Competitions} (CNC) \\
+    \textit{Equamat} -- mathematics competition, category 8th grade
+\end{jobopt}
+\begin{jobopt}{Bronze Medal in \textit{37th Paulistan Mathematics Olympiad}}{2013/11}%2013/11/09
+    Department of Mathematics of the University of Coimbra (for the portuguese students)\\
+    Category Alpha (7th/8th grades)
+\end{jobopt}
+\begin{jobopt}{Participação nas \textit{XIX May Olympiad}}{2013/05}%2013/05/11
+    Department of Mathematics of the University of Coimbra (for the portuguese students)\\
+    Level 1 (up to 13 years old)
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{Solar Cars Design and Race Challenge -- AT THE SPEED OF THE SUN}}{2013/05}%2013/05/05
+    Municipality of Maia
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{Mathematical Kangaroo 2013}}{2013/04}%2013/04/04
+    Category Benjamin (7th/8th grades)
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} the National Finals of the \textit{31st Portuguese Mathematics Olympiad}}{2013/03/14 -- 2013/03/17}
+    Francisco Cabrita Basic School of 2nd and 3rd cycles, Albufeira\\
+    Category Junior (6th/7th grades)
+\end{jobopt}
+\begin{jobopt}{1st place in the competition \textit{Problem of the Month}}{2011/2012}
+    Held during school year 2011/12 at Castêlo da Maia Basic School of 2nd and 3rd cycles, Maia
+\end{jobopt}
+\begin{jobopt}{7th place in \textit{Mathematical Kangaroo 2012}}{2012/03}%2012/03/15
+    Category Ecolier (5th/6th grades)\\
+    1st place in school, 7th place in national ranking
+\end{jobopt}
+\begin{jobopt}{\en{Participation in}\pt{Participação no} \textit{Mathematical Kangaroo 2011}}{2011/03}%2011/03/17
+    Category Ecolier (5th/6th grades)
+\end{jobopt}
+
 \subsection*{\en{Exchanges}\pt{Intercâmbios}}
-\job{\en{Erasmus+ Studies}\pt{Erasmus+ Estudos}}{17-10-2022 -- Mar/2023}{
-\textit{Technical University of Munich}
-}
-\job{\en{Student exchange between}\pt{Intercâmbio entre a} \en{Castêlo da Maia Secondary School}\pt{Escola Secundária do Castêlo da Maia} \en{and}\pt{e a} Rejsby European Efterskole}{}{
-\textit{Rejsby Europæiske Efterskole} -- Ribe, \en{South Denmark}\pt{Dinamarca do Sul}\\
-\itemtime{\en{Stay in Denmark}\pt{Estadia na Dinamarca}:}{17-02-2015 -- 24-02-2015}\\
-\itemtime{\en{Hosting of Danish students in Portugal}\pt{Acolhimento dos estudantes dinamarqueses}:}{15-04-2015 -- 22-04-2015}\\
-}
+\begin{job}{\en{Erasmus+ Studies}\pt{Erasmus+ Estudos}}{2022/10 -- 2023/03}%2022/10/17 -- 2023/03/24
+    \textit{Technical University of Munich}
+\end{job}
+\begin{job}{\en{Student exchange}\pt{Intercâmbio} \en{Castêlo da Maia Secondary School}\pt{Escola Secundária do Castêlo da Maia} $\Leftrightarrow$ Rejsby European Efterskole}{}
+    \textit{Rejsby Europæiske Efterskole} -- Ribe, \en{South Denmark}\pt{Dinamarca do Sul}
+    \\\itemtime{\en{Stay in Denmark}\pt{Estadia na Dinamarca}:}{2015/02}%2015/02/17 -- 2015/02/24
+    \\\itemtime{\en{Hosting of Danish students in Portugal}\pt{Acolhimento dos estudantes dinamarqueses}:}{2015/04}%2015/04/15 -- 2015/04/22
+\end{job}
 \subsection*{\en{Associations \& projects}\pt{Associações e projetos}}
-\job{\textit{Research on European Children and Adults Born Preterm} (RECAP)}{\pt{Set}\en{Sep}/2018 -- Mar/2019}{
-\en{The aim of the RECAP Preterm project is to improve the health, development and quality of life of children and adults born very preterm in the European Union by developing the \textit{RECAP Preterm Cohort Platform}, a sustainable, geographically diverse and multidisciplinary database of national and European cohorts of babies born very preterm or with very low birth weight, with data collected over a period of 30 years and designed to optimize the use of populational data for research and innovation in healthcare, social and education policy.}
-\pt{O objetivo do projeto RECAP Preterm é melhorar a saúde, desenvolvimento e qualidade de vida de crianças e adultos nascidos prematuros na União Europeia através do desenvolvimento do \textit{RECAP Preterm Cohort Platform}, uma base de dados de cohorts nacionais e europeus de bebés nascidos prematuramente ao longo de 30 anos, e projetada para otimizar a utilização de dados populacionais para investigação e inovação nas áreas da saúde e política social e educacional.}
-\optional{
-\\ \en{I developed a web app integrated into the project website, which allows authenticated users to rapidly perform simple/exploratory statistical analysis without requiring specific knowledge about the database access tools, and presents results in a graphic fashion. For that I used NodeJS and DATAShield, as well as JavaScript and R.}
-\pt{Desenvolvi uma aplicação web integrada com o website do projeto, que permite a utilizadores autenticados realizar rapidamente análises estatísticas simples/exploratórias sem necessidade de conhecimento específico sobre as ferramentas de acesso à base de dados, e apresentar resultados de forma gráfica. Utilizei as tecnologias NodeJS e DATAShield, assim como as linguagens Javascript e R.}
+\begin{job}{\textit{Research on European Children and Adults Born Preterm} (RECAP)}{2019/09 -- 2020/03}
+    \en{The aim of the RECAP Preterm project is to improve the health, development and quality of life of children and adults born very preterm in the European Union by developing the \textit{RECAP Preterm Cohort Platform}, a sustainable, geographically diverse and multidisciplinary database of national and European cohorts of babies born very preterm or with very low birth weight, with data collected over a period of 30 years and designed to optimize the use of populational data for research and innovation in healthcare, social and education policy.}
+    \pt{O objetivo do projeto RECAP Preterm é melhorar a saúde, desenvolvimento e qualidade de vida de crianças e adultos nascidos prematuros na União Europeia através do desenvolvimento do \textit{RECAP Preterm Cohort Platform}, uma base de dados de cohorts nacionais e europeus de bebés nascidos prematuramente ao longo de 30 anos, e projetada para otimizar a utilização de dados populacionais para investigação e inovação nas áreas da saúde e política social e educacional.}
+    \optional{
+        \\ \en{I developed a web app integrated into the project website, which allows authenticated users to rapidly perform simple/exploratory statistical analysis without requiring specific knowledge about the database access tools, and presents results in a graphic fashion. For that I used NodeJS and DATAShield, as well as JavaScript and R.}
+        \pt{Desenvolvi uma aplicação web integrada com o website do projeto, que permite a utilizadores autenticados realizar rapidamente análises estatísticas simples/exploratórias sem necessidade de conhecimento específico sobre as ferramentas de acesso à base de dados, e apresentar resultados de forma gráfica. Utilizei as tecnologias NodeJS e DATAShield, assim como as linguagens Javascript e R.}
+    }
+\end{job}
+\begin{job}{\en{FEUP-SWERC community}\pt{Comunidade FEUP-SWERC}}{2018/09 -- 2023/02}
+    \en{Colaboration community of students and teachers of the Faculty of Engineering of the University of Porto, with the goal of incentivizing competitive programming in the FEUP community, promoting programming competitions and select/prepare FEUP students for national, european and international programming competitions.}
+    \pt{Comunidade colaborativa de estudantes e professores da Faculdade de Engenharia da Universidade do Porto, com o objetivo de incentivar a programação competitiva na comunidade FEUP, promovendo competições de programação e selecionando/preparando os estudantes da FEUP para competições de programação nacionais, europeias e internacionais.}
+\end{job}
+\begin{jobopt}{\en{Schools Participatory Budget}\pt{Orçamento Participativo das Escolas} -- \en{Proposal}\pt{Proposta} \textit{UPAC-AECM}}{2018}
+    \en{Second proponent of proposal UPAC-AECM, consisting of the installation of a Self-Consumption Unit, made of a set of photovoltaic panels, in Castêlo da Maia Secondary School. Winning proposal of the election held on 2018/03/23, by absolute majority (50.3\% of valid votes).}
+    \pt{2º proponente da proposta UPAC-AECM, consistindo da instalação de uma Unidade de Auto-Consumo, constituída por um conjunto de painéis solares, na Escola Secundária do Castêlo da Maia. Proposta vencedora da eleição realizada a 2018/03/23.}
+\end{jobopt}
+\begin{jobopt}{Project Quark!}{2018}
+    A school of excellence of Physics for students from 11th and 12th grades, with a highly competitive selection process. Takes place at the Department of Physics of the University of Coimbra, on the weekends. Member of the group of 19 students eligible for international competitions (through the National Physics Olympiad 2017). \textbf{1st place} in the Selection Tests for International Competitions in 2018/05/19, qualifying for the \textbf{\textit{49th International Physics Olympiad -- IPhO2018}}, in Lisbon, Portugal.
+\end{jobopt}
+\begin{jobopt}{Project Delfos}{2013; 2015 -- 2016}
+    Mathematics project with the goal of preparing the portuguese representatives in international Mathematics competitions. Takes place at the Department of Mathematics of the University of Coimbra, on the weekends.
+\end{jobopt}
+
+\subsection*{\en{Forums, lectures, conferences \& congresses}\pt{Fóruns, palestras, conferências e congressos}}
+
+\begin{job}{\textit{DynamiCITY Final Workshop}}{2023/06}%2023/06/27
+    Porto, Portugal\\
+    Oral presentation
+\end{job}
+\begin{jobopt}{\textit{Week of Informatics 2019}}{2019/10/28 -- 2019/10/31}
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}\\
+    Week of lectures and workshops promoted by the Nucleus of Informatics of the Students' Association of FEUP (AEFEUP)
+\end{jobopt}
+\begin{job}{\textit{London International Youth Science Forum 2019}}{2019/07 -- 2019/08}%2019/07/24 -- 2019/08/07
+    Imperial College London \& Royal Geographical Society, \en{London}\pt{Londres}\\
+    \en{Poster presentation}\pt{Apresentação de Poster} | \en{Supported by the Calouste Gulbenkian Foundation}\pt{Apoiada pela Fundação Calouste Gulbenkian}
+\end{job}
+\begin{jobopt}{\textit{Evolution and Future of Artificial Intelligence -- Technical, Economic, Social and Cultural Repercussions}}{2019/03}%2019/03/11
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}\\
+    Seminar organized under the cycle \textit{New Paradigms, Debates and Iniciatives at FEUP}
+\end{jobopt}
+\begin{jobopt}{\textit{Week of Informatics 2018}}{2018/10/29 -- 2018/11/01}
+    \en{Faculty of Engineering of the University of Porto}\pt{Faculdade de Engenharia da Universidade do Porto}\\
+    Week of lectures and workshops promoted by the Nucleus of Informatics of the Students' Association of FEUP (AEFEUP)
+\end{jobopt}
+\begin{jobopt}{\en{Youth Municipal Assembly of Maia}\pt{Assembleia Municipal Jovem da Maia}}{2018/04}%2018/04/23
+    \en{Municipal Chamber of Maia}\pt{Câmara Municipal da Maia}
+    \\ \en{Took place as part of the Commemorations of the 44th anniversary of the Carnation Revolution}\pt{Realizado no contexto das Comemorações do 44º aniversário da Revolução de 25 de Abril}
+    \\ \en{Deputee of the Youth Municipal Assembly, representing Castêlo da Maia Schools Grouping}\pt{Deputado da Assembleia Municipal Jovem, em representação do Agrupamento de Escolas do Castêlo da Maia}
+    \\ \en{Intervention in the period before agenda -- Accessibility in the municipality, and garbage management}\pt{Intervenção no período antes da agenda -- Acessibilidade no município, e gestão de resíduos}
+\end{jobopt}
+\begin{jobopt}{\textit{CERN’s International Masterclasses Porto -- 2018}}{2018/03}%2018/03/10
+    Department of Physics and Astronomy -- Faculty of Sciences of the University of Porto\\
+    Lectures about particle physics, particle collision analysis with data from CERN and\\
+    discussion of results with other european centers and scientists at CERN
+\end{jobopt}
+
+\subsection*{\en{Publications \& articles}\pt{Publicações e artigos}}
+\pub{AI Approach to Population Demographics using Satellite Imagery}{2019}{
+    \textit{London International Youth Science Forum 2019} |
+    \en{Supported by Calouste Gulbenkian Foundation}\pt{Apoiado pela Fundação Calouste Gulbenkian}
 }
-}
-\job{\en{FEUP-SWERC community}\pt{Comunidade FEUP-SWERC}}{\pt{Set}\en{Sep}/2018 -- }{
-\en{Colaboration community of students and teachers of the Faculty of Engineering of the University of Porto, with the goal of incentivizing competitive programming in the FEUP community, promoting programming competitions and select/prepare FEUP students for national, european and international programming competitions.}
-\pt{Comunidade colaborativa de estudantes e professores da Faculdade de Engenharia da Universidade do Porto, com o objetivo de incentivar a programação competitiva na comunidade FEUP, promovendo competições de programação e selecionando/preparando os estudantes da FEUP para competições de programação nacionais, europeias e internacionais.}
-}
-\job[opt]{\en{Schools Participatory Budget}\pt{Orçamento Participativo das Escolas} -- \en{Proposal}\pt{Proposta} \textit{UPAC-AECM}}{2018}{
-\en{Second proponent of proposal UPAC-AECM, consisting of the installation of a Self-Consumption Unit, made of a set of photovoltaic panels, in Castêlo da Maia Secondary School. Winning proposal of the election held on 23-03-2018, by absolute majority (50.3\% of valid votes).}
-\pt{2º proponente da proposta UPAC-AECM, consistindo da instalação de uma Unidade de Auto-Consumo, constituída por um conjunto de painéis solares, na Escola Secundária do Castêlo da Maia. Proposta vencedora da eleição realizada a 23-03-2018.}
-}
-\job[opt]{Project Quark!}{2018}{
-A school of excellence of Physics for students from 11th and 12th grades, with a highly competitive selection process. Takes place at the Department of Physics of the University of Coimbra, on the weekends. Member of the group of 19 students eligible for international competitions (through the National Physics Olympiad 2017). \textbf{1st place} in the Selection Tests for International Competitions in 19-05-2018, qualifying for the \textbf{\textit{49th International Physics Olympiad -- IPhO2018}}, in Lisbon, Portugal.
-}
-\job[opt]{Project Delfos}{2013; 2015 -- 2016}{
-Mathematics project with the goal of preparing the portuguese representatives in international Mathematics competitions. Takes place at the Department of Mathematics of the University of Coimbra, on the weekends.
-}
+
 \end{document}
